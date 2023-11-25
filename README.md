@@ -142,7 +142,6 @@ Test if your alerts are ok:
 Wait some seconds and you will see the integration works fine! Prometheus alerting the AlertManager that alert the Slack that shows it to you! It's so easy and that simple! :D
 ```
 
-
 Create new alerts on Prometheus:
 ```bash
 # nano config/prometheus/alert.rules
