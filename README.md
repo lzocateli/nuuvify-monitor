@@ -53,7 +53,7 @@ Setting Netdata Exporter configuration in Prometheus:
 ```
 
 
-## Get Rocket.Chat Incoming WebHook 
+## Get Microsoft Teams Incoming WebHook 
 
 1) Deploy nuuvify stack, only to get the WebHook
 
