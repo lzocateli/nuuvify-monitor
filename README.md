@@ -98,8 +98,6 @@ jol20u8pahlp    nuuvify_grafana              replicated   1/1       grafana/graf
 usr0jy4jquns    nuuvify_node-exporter        global       1/1       lzocateli/node-exporter_alpine:latest  *:9100->9100/tcp
 zc3qza0bxys7    nuuvify_prometheus           replicated   1/1       lzocateli/prometheus_alpine:latest     *:9090->9090/tcp
 ```
-PS: Don't worry why nuuvify_mongo-init-replica service is down, it only executes one time to initialize the replica set. It will not stay running.
-
 
 ## Access Services in Browser
 
@@ -139,7 +137,6 @@ Test if your alerts are ok:
 ```bash
 # docker service rm nuuvify_node-exporter
 
-Wait some seconds and you will see the integration works fine! Prometheus alerting the AlertManager that alert the Slack that shows it to you! It's so easy and that simple! :D
 ```
 
 Create new alerts on Prometheus:
