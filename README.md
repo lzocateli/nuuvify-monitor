@@ -39,6 +39,9 @@ First of all, clone the nuuvify-monitor repo:
 ```
 
 Setting Netdata Exporter configuration in Prometheus:
+
+You must install netdata on each node (machine) that you want to monitor, so in `job_name: 'netdata'` of prometheus.yml, which will be on just one node, that is, the prometheus server, include all the IP's that have netdata installed.
+
 ```bash
 # nano config/prometheus/prometheus.yml
 ...
@@ -49,7 +52,7 @@ Setting Netdata Exporter configuration in Prometheus:
     honor_labels: true
     scrape_interval: 5s
     static_configs:
-         - targets: ['YOUR_IP:19999']
+         - targets: ['YOUR_IP:19999', 'YOUR_IPVM2:19999', 'YOUR_IPVM3:19999']
 ```
 
 
