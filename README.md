@@ -53,7 +53,7 @@ Setting Netdata Exporter configuration in Prometheus:
 ```
 
 
-## Get Rocket.Chat Incoming WebHook 
+## Get Microsoft Teams Incoming WebHook 
 
 1) Deploy nuuvify stack, only to get the WebHook
 
@@ -137,9 +137,7 @@ Test if your alerts are ok:
 ```bash
 # docker service rm nuuvify_node-exporter
 
-Wait some seconds and you will see the integration works fine! Prometheus alerting the AlertManager that alert the Slack that shows it to you! It's so easy and that simple! :D
 ```
-
 
 Create new alerts on Prometheus:
 ```bash
